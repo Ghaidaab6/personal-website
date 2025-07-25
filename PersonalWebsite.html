@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Personal Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #87c0fd;
+      color: white;
+      padding: 30px 0;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .about, .contact, .Project {
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #007BFF;
+    }
+
+    .social-links a:hover {
+      color: #0056b3;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    form button {
+      background-color: #007BFF;
+      padding: 10px 25px;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Portfolio project styling */
+    .project {
+      background: white;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project a {
+      color: #027bfc;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ghaida</h1>
+    <p>Computer Science Student</p>
+  </header>
+
+  <section>
+    <div class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Ghaida Abdullah Althunayyan,a student at Qassim University. This is my basic personal site built with HTML, CSS, and JavaScript.</p>
+
+      <ul style="list-style: none; padding: 0; font-size: 18px; text-align: left; max-width: 400px; margin: 20px auto;">
+        <li><strong>Birth Date:</strong> 17-8-2002</li>
+        <li><strong>Email:</strong> <a href="mailto:ghaidatha@gmail.com">ghaidatha@gmail.com</a></li>
+        <li><strong>Phone:</strong> +966 531500296</li>
+        <li><strong>Student ID:</strong> 421202167</li>
+      </ul>
+
+
+      <div class="social-links" style="margin-top: 30px;">
+        <h3>Connect with me</h3>
+        <a href="https://wa.me/+966531500296" target="_blank">Whatsapp</a>
+        <a href="https://x.com/ghai_th6?s=21&t=dAwOZOs0DnIasSsm4vpcDQ" target="_blank">X</a>
+        <a href="https://github.com/Ghaidaab6" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section>
+    <div class="Project">
+      <h2>Project</h2>
+
+      <div class="project">
+        <h3>Smart Attendance App</h3>
+        <p>A simple interfaces using Figma for a software engineering project </p>
+        <a href="C:\Users\Ghaidaa\Documents\Interface.pdf" target="_blank">File of Interfaces </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ghaida.
+  </footer>
+
+  <script>
+    
+
+    function submitForm(event) {
+      event.preventDefault(); // Prevent page refresh
+      alert("Thank you! Your message has been sent.");
+    }
+  </script>
+</body>
+</html>
